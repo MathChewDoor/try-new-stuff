@@ -5,11 +5,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #fff3e0;
+    background: #e3f2fd;
 }
 
 header {
-    background-color: #555;
+    background-color: #777;
     color: white;
     padding: 1rem 0;
 }
@@ -30,39 +30,34 @@ nav a:hover {
     color: #f4a261;
 }
 
-#resume {
+#contact {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, #ffccbc, #ffe0b2);
+    background: linear-gradient(135deg, #bbdefb, #e3f2fd);
     text-align: center;
     min-height: 60vh;
 }
 
-#resume h1 {
+#contact h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
 }
 
-#resume p {
+#contact p {
     font-size: 1.2rem;
 }
 
-footer {
-    background-color: #555;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-
-footer a {
-    color: #f4a261;
-}
-
-footer a:hover {
-    color: white;
-}
+form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.

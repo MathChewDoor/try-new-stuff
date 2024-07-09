@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -19,10 +19,18 @@
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Learn more about who I am, my passions, and my journey.</p>
-            <!-- Add your about details here -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <p>Get in touch with me through the following contact form.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer>
