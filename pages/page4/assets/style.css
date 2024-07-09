@@ -60,4 +60,41 @@ form {
     border: 1px solid #ddd;
     border-radius: 5px;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label, form input, form textarea, form button {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #f4a261;
+}
+
+footer {
+    background-color: #777;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #f4a261;
+}
+
+footer a:hover {
+    color: white;
+}
