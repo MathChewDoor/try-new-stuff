@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0; /* Added to ensure no default margin */
 }
 
 header {
@@ -52,6 +53,7 @@ nav a:hover {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #333; /* Added color for better readability */
 }
 
 section {
