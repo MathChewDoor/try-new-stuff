@@ -6,10 +6,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: #e8f5e9;
+    margin: 0; /* Reset default margin */
 }
 
 header {
-    background-color: #666;
+    background-color: #444;
     color: white;
     padding: 1rem 0;
 }
@@ -24,6 +25,7 @@ nav a {
     color: white;
     font-size: 1.2rem;
     transition: color 0.3s ease;
+    text-decoration: none; /* Remove underline from links */
 }
 
 nav a:hover {
@@ -48,12 +50,19 @@ nav a:hover {
     color: #333;
 }
 
+#about .about-details {
+    max-width: 800px;
+    width: 100%;
+}
+
 #about p {
     font-size: 1.2rem;
+    margin-bottom: 1.5rem; /* Increase spacing between paragraphs */
+    text-align: left; /* Align text left for better readability */
 }
 
 footer {
-    background-color: #666;
+    background-color: #444;
     color: white;
     text-align: center;
     padding: 1rem 0;
