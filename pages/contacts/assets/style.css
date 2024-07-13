@@ -9,9 +9,10 @@ body {
 }
 
 header {
-    background-color: #777;
+    background-color: #007BFF;
     color: white;
     padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -31,7 +32,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #f4a261;
+    color: #FFD700;
+    transform: scale(1.1);
 }
 
 #contact {
@@ -44,6 +46,20 @@ nav a:hover {
     background: linear-gradient(135deg, #bbdefb, #e3f2fd);
     text-align: center;
     min-height: 60vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #contact h1 {
@@ -69,24 +85,26 @@ nav a:hover {
 }
 
 #contact a {
-    color: #333;
+    color: #007BFF;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #f4a261;
+    color: #FFD700;
+    transform: scale(1.1);
 }
 
 footer {
-    background-color: #777;
+    background-color: #007BFF;
     color: white;
     text-align: center;
     padding: 1rem 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-    color: #f4a261;
+    color: #FFD700;
     text-decoration: none;
 }
 
