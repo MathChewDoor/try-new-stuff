@@ -98,7 +98,7 @@ footer a:hover {
 
 @keyframes slideInDown {
     from {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
         opacity: 0;
     }
     to {
@@ -120,7 +120,7 @@ footer a:hover {
 
 @keyframes slideInUp {
     from {
-        transform: translateY(100%);
+        transform: translateY(50%);
         opacity: 0;
     }
     to {
