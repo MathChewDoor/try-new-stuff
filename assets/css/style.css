@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0; /* Added to ensure no default margin */
+    background: #f4f4f9; /* Updated background color */
 }
 
 header {
@@ -39,21 +40,26 @@ nav a:hover {
 }
 
 .hero {
-    flex: 1;
+    position: relative; /* Ensure positioning for absolute content */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 5rem 2rem;
-    background: #f4f4f9;
     text-align: center;
-    min-height: 60vh; /* Ensure a large space for the hero section */
+    min-height: 60vh;
+    background: url('../assets/images/your-image.png') center/cover no-repeat; /* Background image settings */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background image */
 }
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #333; /* Added color for better readability */
+    color: #333;
 }
 
 section {
@@ -64,14 +70,45 @@ section {
 section a.btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #333;
-    color: white;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-section a.btn:hover {
+/* Different button colors */
+#projects a.btn {
+    background-color: #333;
+    color: white;
+}
+
+#projects a.btn:hover {
     background-color: #f4a261;
+}
+
+#resume a.btn {
+    background-color: #4285f4;
+    color: white;
+}
+
+#resume a.btn:hover {
+    background-color: #0d47a1;
+}
+
+#about a.btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+#about a.btn:hover {
+    background-color: #087f23;
+}
+
+#contact a.btn {
+    background-color: #ff5722;
+    color: white;
+}
+
+#contact a.btn:hover {
+    background-color: #e64a19;
 }
 
 footer {
