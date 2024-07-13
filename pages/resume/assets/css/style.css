@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: #fff3e0;
+    margin: 0;
 }
 
 header {
@@ -27,11 +28,12 @@ nav a {
     color: white;
     font-size: 1.2rem;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     color: #f4a261;
+    transform: scale(1.1);
 }
 
 #resume {
@@ -44,23 +46,27 @@ nav a:hover {
     background: linear-gradient(135deg, #ffccbc, #ffe0b2);
     text-align: center;
     min-height: 60vh;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #resume h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #333;
+    animation: slideInDown 1s ease-in-out;
 }
 
 #resume p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
 #resume h2 {
     font-size: 2rem;
     margin-top: 2rem;
     color: #333;
+    animation: slideInUp 2s ease-in-out;
 }
 
 footer {
@@ -73,8 +79,52 @@ footer {
 footer a {
     color: #f4a261;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
     color: white;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
