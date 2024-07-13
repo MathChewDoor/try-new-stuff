@@ -14,6 +14,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0; /* Added to ensure no default margin */
+    background-color: #f0f0f0; /* Light grey background */
 }
 
 header {
@@ -69,11 +70,17 @@ section {
 }
 
 .project {
-    background-color: #f4f4f9;
+    background-color: #ffffff; /* White background for project cards */
     padding: 1rem;
     border-radius: 5px;
     width: calc(50% - 2rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for effects */
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .project h2 {
