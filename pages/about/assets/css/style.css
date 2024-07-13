@@ -5,12 +5,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #fff3e0;
-    margin: 0; /* Reset default margin */
+    background: #e8f5e9;
+    margin: 0; 
 }
 
 header {
-    background-color: #ef6c00;
+    background-color: #2e7d32;
     color: white;
     padding: 1rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -29,11 +29,11 @@ nav a {
     color: white;
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none; 
 }
 
 nav a:hover {
-    color: #ffb74d;
+    color: #81c784;
     transform: scale(1.1);
 }
 
@@ -44,7 +44,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     padding: 5rem 2rem;
-    background: linear-gradient(135deg, #ffcc80, #ffe0b2);
+    background: linear-gradient(135deg, #a5d6a7, #c8e6c9);
     text-align: center;
     min-height: 60vh;
     transition: background 0.5s ease;
@@ -61,7 +61,7 @@ nav a:hover {
     content: '';
     width: 50px;
     height: 4px;
-    background: #ef6c00;
+    background: #2e7d32;
     position: absolute;
     bottom: -10px;
     left: 50%;
@@ -75,12 +75,12 @@ nav a:hover {
 
 #about p {
     font-size: 1.2rem;
-    margin-bottom: 1.5rem; /* Increase spacing between paragraphs */
-    text-align: left; /* Align text left for better readability */
+    margin-bottom: 1.5rem; 
+    text-align: left; 
 }
 
 footer {
-    background-color: #ef6c00;
+    background-color: #2e7d32;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -88,7 +88,7 @@ footer {
 }
 
 footer a {
-    color: #ffb74d;
+    color: #81c784;
 }
 
 footer a:hover {
