@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0; /* Added to ensure no default margin */
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #ADD8E6; /* Light blue background */
 }
 
 header {
