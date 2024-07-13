@@ -69,7 +69,7 @@ nav a:hover {
 .hero-content {
     position: relative;
     z-index: 1; /* Ensure content is above the background */
-    color: #333; /* Adjust text color for better readability */
+    color: #ffffff; /* Adjust text color for better readability */
 }
 
 .hero-content h1 {
